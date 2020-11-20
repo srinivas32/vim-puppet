@@ -6,7 +6,14 @@ matrix:
     - env: TESTVIM=vim
     # nightly build neovim version
     - env: TESTVIM=nvim
-
+    # added power support arch.
+    # travis build-in vim version, 7.x
+    - env: TESTVIM=vim
+      arch: ppc64le
+    # nightly build neovim version
+    - env: TESTVIM=nvim
+      arch: ppc64le
+    # added power support arch.
 install:
   - |
     set -e
